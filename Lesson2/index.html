@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Css in HTML (style) - should be placed inside head element. DO NOT USE. -->
+    <style>
+      /* 
+      selector {
+        rule: value;
+      }
+      */
+
+
+      /* class selector - starts with a . folllowed by class name */
+      .card {
+        background-color: #65a30d;
+        max-width: 300px;
+        text-align: center;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Semantic elements: main, section, h1 ... h6, p, img  -->
+    <!-- Non-semantic elements: div, span -->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="./contact.html">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Lesson 2</h1>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing
+            elit. Quia quae saepe repellat! Dolorum assumenda magnam quis animi!
+            Provident repellat incidunt aliquid, ut reiciendis quis praesentium
+            placeat nulla maiores! Quas, eaque!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae
+            saepe repellat! Dolorum assumenda magnam quis animi! Provident
+            repellat incidunt aliquid, ut reiciendis quis praesentium placeat
+            nulla maiores! Quas, eaque!
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Pricing</h2>
+        <div class="card">
+          <span>Total: 50$</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- Inline styles - DO NOT USE!!! -->
+    <img src="./image.jpg" alt="" style="width: 500px; border-radius: 10px" />
+
+
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 2 - Contact</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="text-center">Sign up form</h1>
+
+      <form>
+        <div class="input-group">
+          <!-- for on the label and id on the input should have the same value!!! -->
+          <label for="name" class="block-label">Name</label>
+          <input type="text" name="name" id="name" required class="full-width"/>
+        </div>
+
+        <div class="input-group">
+          <label for="email" class="block-label">Email</label>
+          <input type="email" name="email" id="email" class="full-width"/>
+        </div>
+
+        <div class="input-group">
+          <label for="telefon" class="block-label">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            id="telefon"
+            placeholder="+46 073 123 44 55"
+            class="full-width"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="message" class="block-label">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="I'd like to learn about..."
+            class="full-width"
+          ></textarea>
+        </div>
+
+        <div class="input-group">
+          <label for="english" class="block-label">Enligh level</label>
+          <select name="english-level" id="english">
+            <option value="">Select your level</option>
+            <option value="a1">A1</option>
+            <option value="a2">A2</option>
+            <option value="b1">B1</option>
+            <option value="b2">B2</option>
+            <option value="c1">C1</option>
+            <option value="c2">C2</option>
+          </select>
+        </div>
+
+        <fieldset class="input-group">
+          <legend>Would you like to save your settings?</legend>
+          <input type="radio" name="settings" id="settings-yes" value="yes"/>
+          <label for="settings-yes">Yes</label>
+
+          <input type="radio" name="settings" id="settings-no" value="no"/>
+          <label for="settings-no">No</label>
+        </fieldset>
+
+        <div class="input-group">
+          <input type="checkbox" id="conditions" name="terms-and-conditions" required value="true">
+          <label for="conditions">I accept terms and conditions</label>
+        </div>
+
+        <button type="reset">Clear</button>
+        <button type="submit">Send</button>
+
+        <!-- <input type="reset" value="Clear">
+        <input type="submit" value="Send"> -->
+      </form>
+    </main>
+  </body>
+</html>
+
+
+<!-- 
+URL encoding
+?name=Anna+Sevostyanova+Atalay&email=annaatalay%40hotmail.com&phone=%2B46732612187&message=&english-level=&terms-and-conditions=true
+-->
