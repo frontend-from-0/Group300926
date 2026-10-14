@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* PX is absolute unit */
+  font-size: 16px;
+  height: 100vh;
+}
+
+main {
+  font-size: 20px;
+  height: 80%;
+  background-color: aqua;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Jim Nightshade", cursive;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 4rem;
+  width: 50%;
+}
+
+p {
+  font-weight: 900;
+  
+}
